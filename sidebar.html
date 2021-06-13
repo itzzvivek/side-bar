@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Side Bar</title>
+</head>
+
+      <link rel="stylesheet" type="text/css" href="sidebar.css">
+<body>
+ 
+        <div class="bar" id="sidebar">
+        	<a href="javascript:void(0)" class="closebtn" onclick="closeside()">×</a>
+        	<a href="#">Home</a>
+        	<a href="#">Service</a>
+        	<a href="#">Gallary</a>
+        	<a href="#">Setting</a>
+            <a href="#">Help</a>
+
+            <h4>Privacy and Security</h4>
+            <!-- <a href="#" class="ps">Privacy and Security</a> -->
+        </div>
+
+        <div class="open">
+
+        	<button class="openbtn" onclick="openside()">☰</button>
+        	
+        </div>
+
+
+<script type="text/javascript">
+	
+      function openside(){
+
+      	document.getElementById("sidebar").style.width = "250px";
+
+      	document.getElementById("open").style.marginLeft = "250px";
+      }
+
+      function closeside(){
+        
+      	document.getElementById("sidebar").style.width = "0px";
+
+      	document.getElementById("open").style.marginLeft = "0px";
+
+
+      }
+
+
+
+</script>
+
+
+
+</body>
+</html>
